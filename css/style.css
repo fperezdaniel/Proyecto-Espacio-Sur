@@ -156,7 +156,7 @@ body{
     }
     
 }
-@media only screen and (min-width:421px) and (max-width:1900px){
+@media only screen and (min-width:421px) and (max-width:960px){
     .main__h2__quienes-somos{
         font-size: 1.4rem;
     }
@@ -213,7 +213,7 @@ body{
     height: 122px;
 }
 }
-@media only screen and (min-width:421px) and (max-width:1900px){
+@media only screen and (min-width:421px) and (max-width:960px){
     .main__texto--franquicia{
         letter-spacing: normal;
     }
@@ -395,7 +395,7 @@ body{
     }
 
 }
-@media only screen and (min-width:421px) and (max-width:1900px){
+@media only screen and (min-width:421px) and (max-width:960px){
     .main__p__galeria{
         width: 100%;
         max-width: 1500px;
@@ -435,7 +435,7 @@ body{
     }
 }
 
-@media only screen and (min-width:421px) and (max-width:1900px){
+@media only screen and (min-width:421px) and (max-width:960px){
     .grid__items__galeria{
         opacity: 1;
     }
@@ -528,7 +528,7 @@ body{
         height: 50%;
     }
 }
-@media only screen and (min-width:421px) and (max-width:1900px){
+@media only screen and (min-width:421px) and (max-width:960px){
     .main__div__contacto{
         padding: 20px 30px;
     }
