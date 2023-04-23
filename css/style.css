@@ -395,13 +395,16 @@ body{
     }
 
 }
-@media only screen and (min-width:421px) and (max-width:960px){
+@media only screen and (min-width:421px) and (max-width:1900px){
     .main__p__galeria{
         width: 100%;
         max-width: 1500px;
         margin: auto;
     }
 }
+
+
+
 /* Fin media queri galeria */
 
 
@@ -435,7 +438,7 @@ body{
     }
 }
 
-@media only screen and (min-width:421px) and (max-width:960px){
+@media only screen and (min-width:421px) and (max-width:1400px){
     .grid__items__galeria{
         opacity: 1;
     }
@@ -466,6 +469,7 @@ body{
         flex-direction: column;
     }
 }
+
 /* Main contacto */
 .main__item__div{
     width: 90%;
