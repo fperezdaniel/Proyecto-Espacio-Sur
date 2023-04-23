@@ -32,6 +32,8 @@ body{
 
 /* Transiciones y tranform */
 
+
+
 .header__h1:hover{
     text-decoration: underline;
 }
@@ -558,11 +560,13 @@ body{
 .footer__p {
     font-size: 1.5rem;
     font-family: 'Antic Didone', serif;
+    font-weight: bold;
 }
 .footer__p--ubicacion{
     font-family: 'Antic Didone', serif;
     text-align: center;
     font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 3.12rem;
 }
 .footer__items__redes{
