@@ -110,15 +110,13 @@ body{
 }
 /* Fin section-two index solo mobile y tablet*/
 
-/* section index three divisoria */
-.section__three{
-    background-color: black;
-}
 
-/* Fin section index three */
+
 /* Main quienes somos */
 
 .main__container--quienes-somos {
+    background-color: #212529;
+    border-radius: 20px;
     width: 90%;
     height: 50vh;
     max-width: 1200px;
@@ -134,6 +132,7 @@ body{
     flex-direction: column;
 }
 .main__h2__quienes-somos{
+    color: #777f86;
     text-align: center;
     font-family: 'Dancing Script', cursive;
     text-decoration: underline;
@@ -141,10 +140,12 @@ body{
     margin-bottom: 50px;
 }
 .main__texto__quienes-somos {
+    color: #777f86;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 50px;
+    margin-left: 20px;
 }
 /* Media queri quienes-somos */
 @media only screen and (max-width:420px){
@@ -182,12 +183,15 @@ body{
     margin: auto;
 }
 .main__texto__franquicia{
+    color:  #212529;
     font-size: 2rem;
     font-family: 'Dancing Script', cursive;
     text-decoration: underline;
     margin: 9.37rem 0;
 }
 .main__texto--franquicia{
+    background-color: #212529;
+    color: #777f86;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 0.625rem;
     box-shadow: 0.31rem 0.31rem 0.31rem;
@@ -244,14 +248,17 @@ body{
     margin-bottom: 12.5rem;
 }
 .main__h2__galeria{
+    color: #212529;
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-decoration: underline;
     margin: 7rem 6.25rem;
 
 }
 
 .main__p__galeria{
+    background-color: #212529;
+    color: #777f86;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 0.625rem;
     box-shadow: 0.31rem 0.31rem 0.31rem;
@@ -263,9 +270,10 @@ body{
 }
 
 .main__titulo__galeria{
+    color: #212529;
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-decoration: underline;
     margin:9.37rem;
 }
@@ -561,6 +569,7 @@ body{
 
 /* Footer  */
 .footer__container {
+    background-color: #212529;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -573,15 +582,16 @@ body{
     line-height: 2rem;
 }
 .footer__p {
+    color: #777f86;
     font-size: 1.5rem;
-    font-family: 'Antic Didone', serif;
-    font-weight: bold;
+    font-family: var(--bs-body-font-family);
+    
 }
 .footer__p--ubicacion{
-    font-family: 'Antic Didone', serif;
+    color: #777f86;
+    font-family: var(--bs-body-font-family);
     text-align: center;
     font-size: 2rem;
-    font-weight: bold;
     margin-bottom: 3.12rem;
 }
 .footer__items__redes{
@@ -594,14 +604,16 @@ body{
     display: flex;
     align-items: flex-end;
 }
+.footer__item__derechos{
+    color: white;
+}
 .footer__container__map{
     width: 60vw;
     border-radius: 1rem;
     margin: 1.25rem 6.25rem;
 }
-.footer__link__redes{
-    color: black;
-}
+
+
 .footer__map{
     width:100%;
     height: 100%;
@@ -631,7 +643,7 @@ body{
         font-size: 1.3rem;
     }
     .footer__link__redes{
-        color: black;
+        color: #777f86;
     }
     .footer__container__map{
         display: none;
@@ -650,7 +662,7 @@ body{
         font-size: 1.3rem;
     }
     .footer__link__redes{
-        color: black;
+        color: #777f86;
     }
     .footer__container__map{
         display: none;
