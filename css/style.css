@@ -218,18 +218,23 @@ body{
 /* Medias queri franquicia */
 @media only screen and (max-width:420px){
     .main__texto--franquicia{
+        margin: 0 20px;
         letter-spacing: normal;
     }
     .foto__occhipinti{
         height: 120px;
+        margin-top: 50px;
     }
     .foto__asador{
-    height: 122px;
+        margin-top: 50px;
+        height: 122px;
 }
 }
 @media only screen and (min-width:421px) and (max-width:960px){
     .main__texto--franquicia{
+        margin: 0 20px;
         letter-spacing: normal;
+
     }
     .foto__occhipinti{
         height: 120px;
