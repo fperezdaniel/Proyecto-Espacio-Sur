@@ -407,6 +407,9 @@ body{
 /* Medias queri galeria */
 
 @media only screen and (max-width:420px){
+    .main__container__galeria{
+        margin: 0 25px;
+    }
     .main__p__galeria{
         width: 100%;
         max-width: 420px;
@@ -415,6 +418,9 @@ body{
 
 }
 @media only screen and (min-width:421px) and (max-width:1900px){
+    .main__container__galeria{
+        margin: 0 25px;
+    }
     .main__p__galeria{
         width: 100%;
         max-width: 1500px;
