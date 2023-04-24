@@ -126,6 +126,7 @@ body{
 }
 
 .main__items__quienes-somos{
+    background-color: #212529;
     border-radius: 20px;
     box-shadow: 10px 5px 50px;
     display: flex;
