@@ -1,0 +1,718 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../assets/img/fondo\ 1\ prueba.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+
+}
+/* header index */
+.header__container__nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 400;
+}
+.header__h1{
+    font-size: 1.5rem;
+    font-family: 'Antic Didone', serif;
+    font-weight: bold;
+}
+
+.header__ul__item{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Transiciones y tranform */
+
+
+
+.header__h1:hover{
+    text-decoration: underline;
+}
+
+
+/* Fin header index */
+/* Main index  carrousel*/
+.main__h2__carousel{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.main__h2__carousel:hover{
+    text-decoration: underline;
+}
+/* Fin main index carrousel */
+
+
+/* Medias queri index*/
+/* section-two index solo mobile y tablet*/
+@media only screen and (max-width:420px){
+    .main__h2__carousel{
+        font-size: 1.7rem;
+    }
+    .main__carousel{
+        display: none;
+    }
+    .section__mobile__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .items__img__mobile{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .section__img__mobile{
+        width: 80%;
+        margin-bottom: 1.25rem;
+        border: 2px solid black;
+    }
+}
+
+@media only screen and (min-width:421px) and (max-width:960px){
+    .main__h2__carousel{
+        font-size: 1.7rem;
+    }
+    .main__carousel{
+        display: none;
+    }
+    .section__mobile__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .items__img__mobile{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .section__img__mobile{
+        width: 80%;
+        margin-bottom: 1.25rem;
+        border: 2px solid black;
+    }
+}
+@media only screen and (min-width:961px){
+    .section__mobile__container{
+        display: none;
+    }
+}
+/* Fin section-two index solo mobile y tablet*/
+
+
+
+/* Main quienes somos */
+
+.main__container--quienes-somos {
+    background-color: #212529;
+    border-radius: 20px;
+    width: 90%;
+    height: 50vh;
+    max-width: 1200px;
+    margin: 200px auto;
+    padding: 60px 0;
+
+}
+
+.main__items__quienes-somos{
+    background-color: #212529;
+    border-radius: 20px;
+    box-shadow: 10px 5px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.main__h2__quienes-somos{
+    color: #777f86;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.main__texto__quienes-somos {
+    color: #777f86;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 50px;
+    margin-left: 20px;
+}
+/* Media queri quienes-somos */
+
+@media only screen and (max-width:420px){
+    .main__container--quienes-somos{
+        height: 85vh;
+        margin-bottom: 600px;
+    }
+    .main__h2__quienes-somos{
+        font-size: 1.6rem;
+    }
+    .main__texto__quienes-somos{
+        font-size: 1rem;
+    }
+    
+}
+@media only screen and (min-width:421px) and (max-width:960px){
+    .main__container--quienes-somos{
+        height: 85vh;
+        margin-bottom: 10px;
+    }
+    .main__h2__quienes-somos{
+        font-size: 1.8rem;
+    }
+    .main__texto__quienes-somos{
+        font-size: 1.1rem;
+    }
+}
+/* Fin main quienes somos */
+/* Main franquicias */
+.main__container__franquicia{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+.main__texto__franquicia{
+    color:  #212529;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: underline;
+    margin: 9.37rem 0;
+}
+.main__texto--franquicia{
+    background-color: #212529;
+    color: #777f86;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.625rem;
+    box-shadow: 0.31rem 0.31rem 0.31rem;
+    letter-spacing: 0.625rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 80px;
+}
+.main__div__franquicias{
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.foto__occhipinti{
+    border: 2px solid black;
+    border-radius: 500px;
+    height: 150px;
+}
+.foto__asador{
+    height: 152px;
+}
+/* Medias queri franquicia */
+@media only screen and (max-width:420px){
+    .main__texto__franquicia{
+        font-size: 1.7rem;
+    }
+    .main__texto--franquicia{
+        font-size: 1rem;
+        margin: 0 20px;
+        letter-spacing: normal;
+    }
+    .foto__occhipinti{
+        height: 120px;
+        margin-top: 50px;
+    }
+    .foto__asador{
+        margin-top: 50px;
+        height: 122px;
+}
+}
+@media only screen and (min-width:421px) and (max-width:960px){
+    .main__texto__franquicia{
+        font-size: 1.7rem;
+    }
+    .main__texto--franquicia{
+        font-size: 1rem;
+        margin: 0 20px;
+        letter-spacing: normal;
+
+    }
+    .foto__occhipinti{
+        height: 120px;
+    }
+    .foto__asador{
+    height: 122px;
+    }
+}
+/* Fin main franquicias */
+/* Main galeria */
+
+.main__container__galeria{
+    margin: 9.37rem 0;
+}
+.main__div__galeria{
+    text-align: center;
+    margin-bottom: 12.5rem;
+}
+.main__h2__galeria{
+    color: #212529;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.3rem;
+    text-decoration: underline;
+    margin: 7rem 6.25rem;
+
+}
+
+.main__p__galeria{
+    background-color: #212529;
+    color: #777f86;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.625rem;
+    box-shadow: 0.31rem 0.31rem 0.31rem;
+    letter-spacing: 0.625rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 25rem;
+}
+
+.main__titulo__galeria{
+    color: #212529;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.3rem;
+    text-decoration: underline;
+    margin:9.37rem;
+}
+
+/* Galeria grid placard */
+.main__grid__img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 1.25rem;
+    box-shadow: 5px 5px 10px;
+}
+
+.main__container__placares{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 400px) ;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.grid__items__galeria{
+    transition: all 0.5s;
+    opacity: 0.7;
+}
+.grid__items__galeria:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.grid__items--tres{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.grid__items--cuatro{
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+.grid__items--cinco{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+/* Fin galeria placard */
+/* Galeria grid pisos */
+.main__container__pisos{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6,1fr);
+    gap: 30px;
+}
+
+.grid__items--seis{
+    grid-column: 1/3;
+}
+.grid__items--siete{
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+.grid_items--ocho{
+    grid-column: 5/7;
+    grid-row: 1/2;
+}
+.grid__items--nueve{
+    grid-row: 2/3;
+    grid-column: 5/7;
+}
+
+.grid__items--diez{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+/* Fin grid galeria pisos*/
+/* Grid galeri cocinas */
+
+.main__container__cocina{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 400px);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.grid__items--doce{
+    grid-row: 1/2;
+    grid-column: 2/4;
+}
+.grid_items--trece{
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+.grid__items--catorce{
+    grid-row: 1/2;
+    grid-column: 4/6;
+}
+.grid__items--quince{
+    grid-column:4/6 ;
+    grid-row: 2/3;
+}
+
+/* Fin grid galeria cocinas */
+
+/* grid galeria parrillas */
+
+.main__container__parrilla{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(3,350px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px
+}
+
+.grid__items--dieciseis{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.grid__items--diecinueve{
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+/* Fin grid galeria parrila */
+
+/* Medias queri galeria */
+
+@media only screen and (max-width:420px){
+    .main__h2__galeria{
+        font-size: 1.7rem;
+    }
+    .main__container__galeria{
+        margin: 0 25px;
+    }
+    .main__p__galeria{
+        width: 100%;
+        font-size: 1rem;
+        max-width: 420px;
+        margin: auto;
+    }
+    .main__titulo__galeria{
+        font-size: 1.7rem;
+    }
+
+}
+@media only screen and (min-width:421px) and (max-width:1900px){
+    .main__container__galeria{
+        margin: 0 25px;
+    }
+    .main__p__galeria{
+        width: 100%;
+        max-width: 1500px;
+        margin: auto;
+    }
+}
+
+
+
+/* Fin media queri galeria */
+
+
+/* Media queri grid galeria */
+@media only screen and (max-width:420px){
+    .grid__items__galeria{
+        opacity: 1;
+    }
+    .grid__items__galeria:hover{
+        transform: none;
+    }
+    .main__container__placares{
+        display: flex;
+        flex-direction: column;
+    }
+    /* grid galeria pisos */
+    .main__container__pisos{
+        display: flex;
+        flex-direction: column;
+    }
+    /* Grid galeria cocina */
+    .main__container__cocina{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Fin galeria cocina */
+    .main__container__parrilla{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:421px) and (max-width:1400px){
+    .grid__items__galeria{
+        opacity: 1;
+    }
+    .grid__items__galeria:hover{
+        transform: none;
+    }
+    .main__container__placares{
+        display: flex;
+        flex-direction: column;
+        transform: none;
+        transition: none;
+    }
+    /* Grid galeria pisos */
+    .main__container__pisos{
+        display: flex;
+        flex-direction: column;
+    }
+    /* fin galeria piso */
+    
+    /* Grid galeria cocina */
+    .main__container__cocina{
+        display: flex;
+        flex-direction: column;
+    }
+    /* Fin galeria cocina */
+    .main__container__parrilla{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* Main contacto */
+.main__item__div{
+    width: 90%;
+    max-width: 1200px;
+    height: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main__div__contacto{
+    border-radius: 10px;
+    padding: 100px 400px;
+    display: flex;
+    justify-content: center;
+}
+.h2__contacto {
+    margin-top: 110px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: underline;
+    font-size: 2rem;
+    
+}
+.controls {
+    width: 900px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.button {
+    height: 200px;
+    padding-top: 20px;
+}
+.enviar {
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px;
+}
+.enviar:hover{
+    background-color: black;
+    color: white;
+}
+/* Medias queri contacto */
+
+@media only screen and (max-width:420px){
+    .h2__contacto{
+        font-size: 1.7rem;
+    }
+    .main__div__contacto{
+        border-radius: 10px;
+        padding: 50px 30px;
+    }
+    .controls{
+        font-size: 1rem;
+        width: 100%;
+        height: 15%;
+    }
+    .button{
+        height: 50%;
+    }
+}
+@media only screen and (min-width:421px) and (max-width:960px){
+    .h2__contacto{
+        font-size: 1.7rem;
+    }
+    .main__div__contacto{
+        padding: 20px 30px;
+    }
+    .controls{
+        font-size: 1rem;
+        width: 100%;
+        height: 15%;
+    }
+    .button{
+        height: 50%;
+    }
+}
+
+/* Fin main contacto*/
+
+
+/* Footer  */
+.footer__container {
+    background-color: #212529;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__div__datos {
+    margin-top: 0.625rem;
+    margin-left: 0.625rem;
+}
+.footer__div__items{
+    line-height: 2rem;
+}
+.footer__p {
+    color: #777f86;
+    font-size: 1.5rem;
+    font-family: var(--bs-body-font-family);
+    
+}
+.footer__p--ubicacion{
+    color: #777f86;
+    font-family: var(--bs-body-font-family);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3.12rem;
+}
+.footer__items__redes{
+    display: inline;
+    margin:0.5rem;
+}
+.footer__div__derechos{
+    height: 10rem;
+    margin-left: 0.1rem;
+    display: flex;
+    align-items: flex-end;
+}
+.footer__item__derechos{
+    color: white;
+}
+.footer__container__map{
+    width: 60vw;
+    border-radius: 1rem;
+    margin: 1.25rem 6.25rem;
+}
+.footer__map{
+    width:100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.footer__link__redes{
+    color: #777f86;
+}
+
+/* Iconos */
+.footer__icon__facebook{
+    color:#4267B2;
+    font-size: 25px;
+}
+.footer__icon__instagram {
+    color: #E1306C;
+    font-size: 25px;
+}
+/* media queri footer */
+
+
+@media only screen and (max-width:420px){
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__p--ubicacion{
+        font-size: 1.2rem;
+    }
+    .footer__p{
+        font-size: 1.1rem;
+    }
+    .footer__link__redes{
+        color: #777f86;
+    }
+    .footer__container__map{
+        display: none;
+    }
+}
+@media only screen and (min-width:421px) and (max-width:960px){
+    /* media queri footer */
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__p--ubicacion{
+        font-size: 1.5rem;
+    }
+    .footer__p{
+        font-size: 1.3rem;
+    }
+    .footer__container__map{
+        display: none;
+    }
+}
+/* Fin footer */

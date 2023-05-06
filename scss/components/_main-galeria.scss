@@ -1,0 +1,366 @@
+/* main galeria */
+
+
+.main__container__galeria {
+    margin: 9.37rem 0;
+
+    @media only screen and (max-width:420px) {
+        margin: 0 25px;
+    }
+
+    @media only screen and (min-width:421px) and (max-width:1900px) {
+        margin: 0 25px;
+    }
+
+    .main__div__galeria {
+        text-align: center;
+        margin-bottom: 12.5rem;
+
+        .main__h2__galeria {
+            color: #212529;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.3rem;
+            text-decoration: underline;
+            margin: 7rem 6.25rem;
+
+            @media only screen and (max-width:420px) {
+                font-size: 1.7rem;
+            }
+        }
+
+        .main__p__galeria {
+            background-color: #212529;
+            color: #777f86;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 0.625rem;
+            box-shadow: 0.31rem 0.31rem 0.31rem;
+            letter-spacing: 0.625rem;
+            line-height: 2.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0 25rem;
+
+            @media only screen and (max-width:420px) {
+                width: 100%;
+                font-size: 1rem;
+                max-width: 420px;
+                margin: auto;
+            }
+
+            @media only screen and (min-width:421px) and (max-width:1900px) {
+                width: 100%;
+                max-width: 1500px;
+                margin: auto;
+            }
+        }
+    }
+
+    .main__titulo__galeria {
+        color: #212529;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 2.3rem;
+        text-decoration: underline;
+        margin: 9.37rem;
+
+        @media only screen and (max-width:420px) {
+            font-size: 1.7rem;
+        }
+    }
+
+    .main__container__placares {
+        /* Galeria grid placard */
+        width: 100%;
+        max-width: 1500px;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(2, 400px);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        @media only screen and (max-width:420px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media only screen and (min-width:421px) and (max-width:1400px) {
+            display: flex;
+            flex-direction: column;
+            transform: none;
+            transition: none;
+        }
+
+        .grid__items__galeria {
+            transition: all 0.5s;
+            opacity: 0.7;
+
+            .main__grid__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1.25rem;
+                box-shadow: 5px 5px 10px;
+
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                opacity: 1;
+
+                @media only screen and (max-width:420px) {
+                    transform: none;
+                    opacity: 1;
+                }
+
+                @media only screen and (min-width:421px) and (max-width:1400px) {
+                    transform: none;
+                }
+            }
+
+            @media only screen and (max-width:420px) {
+                opacity: 1;
+            }
+
+            @media only screen and (min-width:421px) and (max-width:1400px) {
+                opacity: 1;
+            }
+        }
+
+        .grid__items--tres {
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+
+        .grid__items--cuatro {
+            grid-column: 3/5;
+            grid-row: 1/2;
+        }
+
+        .grid__items--cinco {
+            grid-column: 3/5;
+            grid-row: 2/3;
+            /* Fin galeria placard*/
+        }
+
+    }
+
+    .main__container__pisos {
+        width: 100%;
+        max-width: 1500px;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px;
+
+        @media only screen and (max-width:420px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media only screen and (min-width:421px) and (max-width:1400px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grid__items__galeria {
+            transition: all 0.5s;
+            opacity: 0.7;
+
+            .main__grid__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1.25rem;
+                box-shadow: 5px 5px 10px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                opacity: 1;
+
+                @media only screen and (max-width:420px) {
+                    transform: none;
+                }
+
+                @media only screen and (min-width:421px) and (max-width:1400px) {
+                    transform: none;
+                }
+
+            }
+
+            @media only screen and (max-width:420px) {
+                opacity: 1;
+            }
+
+            @media only screen and (min-width:421px) and (max-width:1400px) {
+                opacity: 1;
+            }
+        }
+
+        .grid__items--seis {
+            grid-column: 1/3;
+        }
+
+        .grid__items--siete {
+            grid-row: 1/3;
+            grid-column: 3/5;
+        }
+
+        .grid_items--ocho {
+            grid-column: 5/7;
+            grid-row: 1/2;
+        }
+
+        .grid__items--nueve {
+            grid-row: 2/3;
+            grid-column: 5/7;
+        }
+
+        .grid__items--diez {
+            grid-column: 1/3;
+            grid-row: 2/3;
+            /* Fin galeria pisos */
+        }
+    }
+
+    .main__container__cocina {
+        /* galeria cocinas */
+        width: 100%;
+        max-width: 1500px;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(2, 400px);
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+
+        @media only screen and (max-width:420px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media only screen and (min-width:421px) and (max-width:1400px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grid__items__galeria {
+            transition: all 0.5s;
+            opacity: 0.7;
+
+            .main__grid__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1.25rem;
+                box-shadow: 5px 5px 10px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                opacity: 1;
+
+                @media only screen and (max-width:420px) {
+                    transform: none;
+                }
+
+                @media only screen and (min-width:421px) and (max-width:1400px) {
+                    transform: none;
+                }
+            }
+
+            @media only screen and (max-width:420px) {
+                opacity: 1;
+            }
+
+            @media only screen and (min-width:421px) and (max-width:1400px) {
+                opacity: 1;
+            }
+        }
+
+        .grid__items--doce {
+            grid-row: 1/2;
+            grid-column: 2/4;
+        }
+
+        .grid_items--trece {
+            grid-row: 2/3;
+            grid-column: 1/4;
+        }
+
+        .grid__items--catorce {
+            grid-row: 1/2;
+            grid-column: 4/6;
+        }
+
+        .grid__items--quince {
+            grid-column: 4/6;
+            grid-row: 2/3;
+            /* Fin galeria cocinas */
+        }
+    }
+
+    .main__container__parrilla {
+        /* galeria parrillas */
+        width: 100%;
+        max-width: 1500px;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(3, 350px);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        @media only screen and (max-width:420px) {
+            display: flex;
+            flex-direction: column;
+        }
+        @media only screen and (min-width:421px) and (max-width:1400px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grid__items__galeria {
+            transition: all 0.5s;
+            opacity: 0.7;
+
+            .main__grid__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1.25rem;
+                box-shadow: 5px 5px 10px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                opacity: 1;
+
+                @media only screen and (max-width:420px) {
+                    transform: none;
+                }
+
+                @media only screen and (min-width:421px) and (max-width:1400px) {
+                    transform: none;
+                }
+            }
+
+            @media only screen and (max-width:420px) {
+                opacity: 1;
+            }
+
+            @media only screen and (min-width:421px) and (max-width:1400px) {
+                opacity: 1;
+            }
+        }
+
+        .grid__items--dieciseis {
+            grid-row: 1/3;
+            grid-column: 1/3;
+        }
+
+        .grid__items--diecinueve {
+            grid-column: 3/5;
+            grid-row: 2/4;
+        }
+    }
+}
