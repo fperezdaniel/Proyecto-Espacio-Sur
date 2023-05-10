@@ -1,0 +1,6 @@
+@mixin grilla($grid, $filas, $columnas, $gap){
+    display: $grid;
+    grid-template-rows: $filas;
+    grid-template-columns: $columnas;
+    gap: $gap;
+} 

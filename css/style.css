@@ -16,15 +16,29 @@ body {
   background-position: center;
 }
 
-/* header index */
+/* header index */ /* Variables */
 .header__container__nav {
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 100;
 }
+.header__container__nav .navbar .container-fuid .header__h1 {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.header__container__nav .navbar .container-fuid .header__h1:hover {
+  text-decoration: underline;
+}
+.header__container__nav .navbar .container-fuid .header__h1 .collapse .header__ul__item .header__ul__item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 /* main-index */
+/* Variables */
 .main__h2__carousel {
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
@@ -62,7 +76,9 @@ body {
 }
 
 /* Fin main-index */
-/* Footer */
+/* Footer */ /* Colores */
+/* Fin lista colores */
+/* Variables */
 .footer__container {
   background-color: #212529;
   width: 100%;
@@ -223,7 +239,7 @@ body {
   }
 }
 
-/* Main quienes somos */
+/* Main quienes somos */ /* Variables */
 .main__container--quienes-somos {
   background-color: #212529;
   border-radius: 20px;
@@ -289,7 +305,7 @@ body {
   }
 }
 
-/* main galeria */
+/* main galeria */ /* Variables */
 .main__container__galeria {
   margin: 9.37rem 0;
 }
@@ -361,9 +377,6 @@ body {
 }
 .main__container__galeria .main__container__placares {
   /* Galeria grid placard */
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
   display: grid;
   grid-template-rows: repeat(2, 400px);
   grid-template-columns: repeat(4, 1fr);
@@ -382,21 +395,6 @@ body {
     transform: none;
     transition: none;
   }
-}
-.main__container__galeria .main__container__placares .grid__items__galeria {
-  transition: all 0.5s;
-  opacity: 0.7;
-}
-.main__container__galeria .main__container__placares .grid__items__galeria .main__grid__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.25rem;
-  box-shadow: 5px 5px 10px;
-}
-.main__container__galeria .main__container__placares .grid__items__galeria:hover {
-  transform: scale(1.1);
-  opacity: 1;
 }
 @media only screen and (max-width: 420px) {
   .main__container__galeria .main__container__placares .grid__items__galeria:hover {
@@ -433,9 +431,6 @@ body {
   /* Fin galeria placard*/
 }
 .main__container__galeria .main__container__pisos {
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(6, 1fr);
@@ -452,21 +447,6 @@ body {
     display: flex;
     flex-direction: column;
   }
-}
-.main__container__galeria .main__container__pisos .grid__items__galeria {
-  transition: all 0.5s;
-  opacity: 0.7;
-}
-.main__container__galeria .main__container__pisos .grid__items__galeria .main__grid__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.25rem;
-  box-shadow: 5px 5px 10px;
-}
-.main__container__galeria .main__container__pisos .grid__items__galeria:hover {
-  transform: scale(1.1);
-  opacity: 1;
 }
 @media only screen and (max-width: 420px) {
   .main__container__galeria .main__container__pisos .grid__items__galeria:hover {
@@ -510,9 +490,6 @@ body {
 }
 .main__container__galeria .main__container__cocina {
   /* galeria cocinas */
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
   display: grid;
   grid-template-rows: repeat(2, 400px);
   grid-template-columns: repeat(5, 1fr);
@@ -529,21 +506,6 @@ body {
     display: flex;
     flex-direction: column;
   }
-}
-.main__container__galeria .main__container__cocina .grid__items__galeria {
-  transition: all 0.5s;
-  opacity: 0.7;
-}
-.main__container__galeria .main__container__cocina .grid__items__galeria .main__grid__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.25rem;
-  box-shadow: 5px 5px 10px;
-}
-.main__container__galeria .main__container__cocina .grid__items__galeria:hover {
-  transform: scale(1.1);
-  opacity: 1;
 }
 @media only screen and (max-width: 420px) {
   .main__container__galeria .main__container__cocina .grid__items__galeria:hover {
@@ -584,9 +546,6 @@ body {
 }
 .main__container__galeria .main__container__parrilla {
   /* galeria parrillas */
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
   display: grid;
   grid-template-rows: repeat(3, 350px);
   grid-template-columns: repeat(4, 1fr);
@@ -603,21 +562,6 @@ body {
     display: flex;
     flex-direction: column;
   }
-}
-.main__container__galeria .main__container__parrilla .grid__items__galeria {
-  transition: all 0.5s;
-  opacity: 0.7;
-}
-.main__container__galeria .main__container__parrilla .grid__items__galeria .main__grid__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.25rem;
-  box-shadow: 5px 5px 10px;
-}
-.main__container__galeria .main__container__parrilla .grid__items__galeria:hover {
-  transform: scale(1.1);
-  opacity: 1;
 }
 @media only screen and (max-width: 420px) {
   .main__container__galeria .main__container__parrilla .grid__items__galeria:hover {
@@ -648,7 +592,7 @@ body {
   grid-row: 2/4;
 }
 
-/* main franquicias */
+/* main franquicias */ /* Variables */
 .main__container__franquicia {
   width: 100%;
   max-width: 1200px;
@@ -676,7 +620,6 @@ body {
 .main__container__franquicia .main__div__franquicia--one .main__texto--franquicia {
   background-color: #212529;
   color: #777f86;
-  font-family: Arial, Helvetica, sans-serif;
   border-radius: 0.625rem;
   box-shadow: 0.31rem 0.31rem 0.31rem;
   letter-spacing: 0.625rem;
@@ -737,7 +680,7 @@ body {
   }
 }
 
-/* Main contacto */
+/* Main contacto */ /* Variables */
 .main__container__contacto .main__item__div {
   width: 90%;
   max-width: 1200px;
@@ -825,5 +768,32 @@ body {
   background-color: black;
   color: white;
 }
+
+/* Extends grid galeria */
+.main__container__galeria .main__container__placares, .main__container__galeria .main__container__pisos, .main__container__galeria .main__container__cocina, .main__container__galeria .main__container__parrilla {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.main__container__galeria .main__container__placares .grid__items__galeria .main__grid__img, .main__container__galeria .main__container__pisos .grid__items__galeria .main__grid__img, .main__container__galeria .main__container__cocina .grid__items__galeria .main__grid__img, .main__container__galeria .main__container__parrilla .grid__items__galeria .main__grid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.25rem;
+  box-shadow: 5px 5px 10px;
+}
+
+.main__container__galeria .main__container__placares .grid__items__galeria:hover, .main__container__galeria .main__container__pisos .grid__items__galeria:hover, .main__container__galeria .main__container__cocina .grid__items__galeria:hover, .main__container__galeria .main__container__parrilla .grid__items__galeria:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.main__container__galeria .main__container__placares .grid__items__galeria, .main__container__galeria .main__container__pisos .grid__items__galeria, .main__container__galeria .main__container__cocina .grid__items__galeria, .main__container__galeria .main__container__parrilla .grid__items__galeria {
+  transition: all 0.5s;
+  opacity: 0.7;
+}
+
+/* Fin extens galeria */
 
 /*# sourceMappingURL=style.css.map */

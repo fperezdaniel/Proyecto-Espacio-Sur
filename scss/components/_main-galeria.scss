@@ -1,6 +1,6 @@
 /* main galeria */
-
-
+@import "../base/mixins";
+@import "../base/variable";
 .main__container__galeria {
     margin: 9.37rem 0;
 
@@ -18,7 +18,7 @@
 
         .main__h2__galeria {
             color: #212529;
-            font-family: 'Dancing Script', cursive;
+            font-family: $fonts-subtitle;
             font-size: 2.3rem;
             text-decoration: underline;
             margin: 7rem 6.25rem;
@@ -30,8 +30,8 @@
 
         .main__p__galeria {
             background-color: #212529;
-            color: #777f86;
-            font-family: Arial, Helvetica, sans-serif;
+            color: nth($colores, 1);
+            font-family: $fonts-text;
             border-radius: 0.625rem;
             box-shadow: 0.31rem 0.31rem 0.31rem;
             letter-spacing: 0.625rem;
@@ -56,9 +56,9 @@
     }
 
     .main__titulo__galeria {
-        color: #212529;
+        color: nth($colores, 2);
         text-align: center;
-        font-family: 'Dancing Script', cursive;
+        font-family: $fonts-subtitle;
         font-size: 2.3rem;
         text-decoration: underline;
         margin: 9.37rem;
@@ -70,13 +70,8 @@
 
     .main__container__placares {
         /* Galeria grid placard */
-        width: 100%;
-        max-width: 1500px;
-        margin: auto;
-        display: grid;
-        grid-template-rows: repeat(2, 400px);
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
+        @extend %ancho-margin;
+        @include grilla (grid, repeat(2, 400px), repeat(4, 1fr), 30px);
 
         @media only screen and (max-width:420px) {
             display: flex;
@@ -91,21 +86,15 @@
         }
 
         .grid__items__galeria {
-            transition: all 0.5s;
-            opacity: 0.7;
+            @extend %transicion-galeria;
 
             .main__grid__img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 1.25rem;
-                box-shadow: 5px 5px 10px;
+                @extend %img-grid;
 
             }
 
             &:hover {
-                transform: scale(1.1);
-                opacity: 1;
+                @extend %hover-galeria;
 
                 @media only screen and (max-width:420px) {
                     transform: none;
@@ -145,13 +134,8 @@
     }
 
     .main__container__pisos {
-        width: 100%;
-        max-width: 1500px;
-        margin: auto;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(6, 1fr);
-        gap: 30px;
+        @extend %ancho-margin;
+        @include grilla(grid, repeat(2, 1fr), repeat(6, 1fr), 30px);
 
         @media only screen and (max-width:420px) {
             display: flex;
@@ -164,20 +148,14 @@
         }
 
         .grid__items__galeria {
-            transition: all 0.5s;
-            opacity: 0.7;
+            @extend %transicion-galeria;
 
             .main__grid__img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 1.25rem;
-                box-shadow: 5px 5px 10px;
+                @extend %img-grid;
             }
 
             &:hover {
-                transform: scale(1.1);
-                opacity: 1;
+                @extend %hover-galeria;
 
                 @media only screen and (max-width:420px) {
                     transform: none;
@@ -226,13 +204,9 @@
 
     .main__container__cocina {
         /* galeria cocinas */
-        width: 100%;
-        max-width: 1500px;
-        margin: auto;
-        display: grid;
-        grid-template-rows: repeat(2, 400px);
-        grid-template-columns: repeat(5, 1fr);
-        gap: 30px;
+        @extend %ancho-margin;
+        @include grilla(grid, repeat(2, 400px), repeat(5, 1fr), 30px);
+        
 
         @media only screen and (max-width:420px) {
             display: flex;
@@ -245,20 +219,14 @@
         }
 
         .grid__items__galeria {
-            transition: all 0.5s;
-            opacity: 0.7;
+            @extend %transicion-galeria;
 
             .main__grid__img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 1.25rem;
-                box-shadow: 5px 5px 10px;
+                @extend %img-grid;
             }
 
             &:hover {
-                transform: scale(1.1);
-                opacity: 1;
+                @extend %hover-galeria;
 
                 @media only screen and (max-width:420px) {
                     transform: none;
@@ -302,13 +270,8 @@
 
     .main__container__parrilla {
         /* galeria parrillas */
-        width: 100%;
-        max-width: 1500px;
-        margin: auto;
-        display: grid;
-        grid-template-rows: repeat(3, 350px);
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
+        @extend %ancho-margin;
+        @include grilla(grid, repeat(3, 350px), repeat(4, 1fr), 30px);
 
         @media only screen and (max-width:420px) {
             display: flex;
@@ -320,20 +283,14 @@
         }
 
         .grid__items__galeria {
-            transition: all 0.5s;
-            opacity: 0.7;
+            @extend %transicion-galeria;
 
             .main__grid__img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 1.25rem;
-                box-shadow: 5px 5px 10px;
+                @extend %img-grid;
             }
 
             &:hover {
-                transform: scale(1.1);
-                opacity: 1;
+                @extend %hover-galeria;
 
                 @media only screen and (max-width:420px) {
                     transform: none;

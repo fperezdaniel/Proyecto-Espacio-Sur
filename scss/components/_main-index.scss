@@ -1,8 +1,8 @@
 
 /* main-index */
-
+@import "../base/variable";
 .main__h2__carousel{
-    font-family: 'Dancing Script', cursive;
+    font-family: $fonts-subtitle;
     font-size: 2rem;
     text-align: center;
     margin-top: 4rem;

@@ -1,5 +1,5 @@
 /* main franquicias */
-
+@import "../base/variable";
 .main__container__franquicia{
     width: 100%;
     max-width: 1200px;
@@ -8,9 +8,9 @@
     margin: auto;
     .main__div__franquicia--one{
         .main__texto__franquicia{
-            color:  #212529;
+            color: nth($colores, 2);
             font-size: 2rem;
-            font-family: 'Dancing Script', cursive;
+            font-family: $fonts-subtitle;
             text-decoration: underline;
             margin: 9.37rem 0;
             @media only screen and (max-width:420px){
@@ -22,8 +22,7 @@
         }
         .main__texto--franquicia{
             background-color: #212529;
-            color: #777f86;
-            font-family: Arial, Helvetica, sans-serif;
+            color: nth($colores, 1);
             border-radius: 0.625rem;
             box-shadow: 0.31rem 0.31rem 0.31rem;
             letter-spacing: 0.625rem;

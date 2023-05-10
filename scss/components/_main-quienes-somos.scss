@@ -1,6 +1,7 @@
 /* Main quienes somos */
+@import "../base/variable";
 .main__container--quienes-somos {
-    background-color: #212529;
+    background-color: nth($colores, 2);
     border-radius: 20px;
     width: 90%;
     height: 50vh;
@@ -16,16 +17,16 @@
         margin-bottom: 290px;
     }
     .main__items__quienes-somos{
-        background-color: #212529;
+        background-color: nth($colores, 2);
         border-radius: 20px;
         box-shadow: 10px 5px 50px;
         display: flex;
         flex-direction: column;
         
         .main__h2__quienes-somos{
-            color: #777f86;
+            color: nth($colores, 1);
             text-align: center;
-            font-family: 'Dancing Script', cursive;
+            font-family: $fonts-subtitle;
             text-decoration: underline;
             font-size: 2rem;
             margin-bottom: 50px;
@@ -37,8 +38,8 @@
             }
         }
         .main__texto__quienes-somos {
-            color: #777f86;
-            font-family: Arial, Helvetica, sans-serif;
+            color: nth($colores, 1);
+            font-family: $fonts-text;
             font-size: 1.2rem;
             font-weight: bold;
             line-height: 50px;

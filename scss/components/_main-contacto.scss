@@ -1,5 +1,5 @@
 /* Main contacto */
-
+@import "../base/variable";
 .main__container__contacto{
     .main__item__div{
         width: 90%;
@@ -10,7 +10,7 @@
         .h2__contacto {
             margin-top: 110px;
             text-align: center;
-            font-family: 'Dancing Script', cursive;
+            font-family: $fonts-subtitle;
             text-decoration: underline;
             font-size: 2rem;
             @media only screen and (max-width:420px){
@@ -39,7 +39,7 @@
                 border-radius: 10px;
                 margin: 5px;
                 font-size: 1.2rem;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: $fonts-text;
                 @media only screen and (max-width:420px){
                     font-size: 1rem;
                     width: 100%;
@@ -67,7 +67,7 @@
                 box-shadow: 10px 10px 10px;
                 &:hover{
                     background-color: black;
-                    color: white;
+                    color: nth($colores, 5);
                 }
             }
         }
