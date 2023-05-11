@@ -11,25 +11,25 @@
         text-decoration: underline;
     }
     
-    @media only screen and (max-width:420px){
+    @include mobile{
         font-size: 1.7rem;
     }
 }
 .main__carousel{
-    @media only screen and (max-width:420px){
+    @include mobile{
         display: none;
     }
 }
 
 /* Media queri main__h2__carousel */
 .main__h2__carousel{
-    @media only screen and (min-width:421px) and (max-width:960px){
+    @include tablet{
         font-size: 1.7rem;
     }
 }
 /* madeia queri main__carousel */
 .main__carousel{
-    @media only screen and (min-width:421px) and (max-width:960px){
+    @include tablet{
         display: none;
     }
 }
