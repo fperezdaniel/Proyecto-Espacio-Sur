@@ -1,15 +1,19 @@
 /* main galeria */
 @import "../base/mixins";
 @import "../base/variable";
-.main__container__galeria {
-    margin: 9.37rem 0;
 
+.main__container__galeria {
+    margin: 9.37rem 50px;
+    
     @media only screen and (max-width:420px) {
-        margin: 0 25px;
+        margin:auto;
+        width: 80%;
+        
     }
 
-    @media only screen and (min-width:421px) and (max-width:1900px) {
-        margin: 0 25px;
+    @media only screen and (min-width:421px) and (max-width:960px) {
+        margin: auto;
+        width:80%;
     }
 
     .main__div__galeria {
@@ -27,32 +31,36 @@
                 font-size: 1.7rem;
             }
         }
-
-        .main__p__galeria {
-            background-color: #212529;
-            color: nth($colores, 1);
-            font-family: $fonts-text;
-            border-radius: 0.625rem;
-            box-shadow: 0.31rem 0.31rem 0.31rem;
-            letter-spacing: 0.625rem;
-            line-height: 2.5rem;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 0 25rem;
-
-            @media only screen and (max-width:420px) {
-                width: 100%;
-                font-size: 1rem;
-                max-width: 420px;
-                margin: auto;
-            }
-
-            @media only screen and (min-width:421px) and (max-width:1900px) {
-                width: 100%;
-                max-width: 1500px;
-                margin: auto;
+        div{
+            width: 80%;
+            margin: auto;
+            .main__p__galeria {
+                
+                background-color: #212529;
+                color: nth($colores, 1);
+                font-family: $fonts-text;
+                border-radius: 0.625rem;
+                box-shadow: 0.31rem 0.31rem 0.31rem;
+                letter-spacing: 0.625rem;
+                line-height: 2.5rem;
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding: 10px;
+    
+                @media only screen and (max-width:420px) {
+                    width: 90%;
+                    font-size: 1rem;
+                    margin: auto;
+                }
+    
+                @media only screen and (min-width:421px) and (max-width:960px) {
+                    width: 80%;
+                    font-size: 1rem;
+                    margin: auto;
+                }
             }
         }
+        
     }
 
     .main__titulo__galeria {
@@ -61,7 +69,7 @@
         font-family: $fonts-subtitle;
         font-size: 2.3rem;
         text-decoration: underline;
-        margin: 9.37rem;
+        margin: 40px 0;
 
         @media only screen and (max-width:420px) {
             font-size: 1.7rem;
@@ -76,37 +84,35 @@
         @media only screen and (max-width:420px) {
             display: flex;
             flex-direction: column;
+
         }
 
         @media only screen and (min-width:421px) and (max-width:1400px) {
             display: flex;
             flex-direction: column;
-            transform: none;
-            transition: none;
+
         }
 
         .grid__items__galeria {
-            @extend %transicion-galeria;
-
+            transition: all 0.5s;
+            opacity: 0.8;
             .main__grid__img {
                 @extend %img-grid;
 
             }
 
             &:hover {
-                @extend %hover-galeria;
-
-                @media only screen and (max-width:420px) {
+                transform: scale(1.1);
+                opacity: 1;
+                @media only screen and (max-width:420px){
                     transform: none;
-                    opacity: 1;
                 }
 
                 @media only screen and (min-width:421px) and (max-width:1400px) {
                     transform: none;
                 }
             }
-
-            @media only screen and (max-width:420px) {
+            @media only screen and (max-width:420px){
                 opacity: 1;
             }
 
@@ -137,7 +143,7 @@
         @extend %ancho-margin;
         @include grilla(grid, repeat(2, 1fr), repeat(6, 1fr), 30px);
 
-        @media only screen and (max-width:420px) {
+        @media only screen and (max-width:420px){
             display: flex;
             flex-direction: column;
         }
@@ -148,16 +154,18 @@
         }
 
         .grid__items__galeria {
-            @extend %transicion-galeria;
+            transition: all 0.5s;
+            opacity: 0.8;
 
             .main__grid__img {
                 @extend %img-grid;
             }
 
             &:hover {
-                @extend %hover-galeria;
+                transform: scale(1.1);
+                opacity: 1;
 
-                @media only screen and (max-width:420px) {
+                @media only screen and (max-width:420px){
                     transform: none;
                 }
 
@@ -206,7 +214,7 @@
         /* galeria cocinas */
         @extend %ancho-margin;
         @include grilla(grid, repeat(2, 400px), repeat(5, 1fr), 30px);
-        
+
 
         @media only screen and (max-width:420px) {
             display: flex;
@@ -219,14 +227,16 @@
         }
 
         .grid__items__galeria {
-            @extend %transicion-galeria;
+            transition: all 0.5s;
+            opacity: 0.8;
 
             .main__grid__img {
                 @extend %img-grid;
             }
 
             &:hover {
-                @extend %hover-galeria;
+                transform: scale(1.1);
+                opacity: 1;
 
                 @media only screen and (max-width:420px) {
                     transform: none;
@@ -277,23 +287,27 @@
             display: flex;
             flex-direction: column;
         }
+
         @media only screen and (min-width:421px) and (max-width:1400px) {
             display: flex;
             flex-direction: column;
         }
 
         .grid__items__galeria {
-            @extend %transicion-galeria;
+            transition: all 0.5s;
+            opacity: 0.8;
 
             .main__grid__img {
                 @extend %img-grid;
             }
 
             &:hover {
-                @extend %hover-galeria;
+                transform: scale(1.1);
+                opacity: 1;
 
                 @media only screen and (max-width:420px) {
                     transform: none;
+
                 }
 
                 @media only screen and (min-width:421px) and (max-width:1400px) {
@@ -301,7 +315,7 @@
                 }
             }
 
-            @media only screen and (max-width:420px) {
+            @media only screen and (max-width:420px){
                 opacity: 1;
             }
 

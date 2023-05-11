@@ -1,7 +1,24 @@
+/* base */ /* Extends grid galeria */
 @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+.main__container__galeria .main__container__parrilla, .main__container__galeria .main__container__cocina, .main__container__galeria .main__container__pisos, .main__container__galeria .main__container__placares {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.main__container__galeria .main__container__parrilla .grid__items__galeria .main__grid__img, .main__container__galeria .main__container__cocina .grid__items__galeria .main__grid__img, .main__container__galeria .main__container__pisos .grid__items__galeria .main__grid__img, .main__container__galeria .main__container__placares .grid__items__galeria .main__grid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.25rem;
+  box-shadow: 5px 5px 10px;
+}
+
+/* Fin extens galeria */
+/* componets - parcials */
 * {
   margin: 0;
   padding: 0;
@@ -307,16 +324,18 @@ body {
 
 /* main galeria */ /* Variables */
 .main__container__galeria {
-  margin: 9.37rem 0;
+  margin: 9.37rem 50px;
 }
 @media only screen and (max-width: 420px) {
   .main__container__galeria {
-    margin: 0 25px;
+    margin: auto;
+    width: 80%;
   }
 }
-@media only screen and (min-width: 421px) and (max-width: 1900px) {
+@media only screen and (min-width: 421px) and (max-width: 960px) {
   .main__container__galeria {
-    margin: 0 25px;
+    margin: auto;
+    width: 80%;
   }
 }
 .main__container__galeria .main__div__galeria {
@@ -335,7 +354,11 @@ body {
     font-size: 1.7rem;
   }
 }
-.main__container__galeria .main__div__galeria .main__p__galeria {
+.main__container__galeria .main__div__galeria div {
+  width: 80%;
+  margin: auto;
+}
+.main__container__galeria .main__div__galeria div .main__p__galeria {
   background-color: #212529;
   color: #777f86;
   font-family: Arial, Helvetica, sans-serif;
@@ -345,20 +368,19 @@ body {
   line-height: 2.5rem;
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 0 25rem;
+  padding: 10px;
 }
 @media only screen and (max-width: 420px) {
-  .main__container__galeria .main__div__galeria .main__p__galeria {
-    width: 100%;
+  .main__container__galeria .main__div__galeria div .main__p__galeria {
+    width: 90%;
     font-size: 1rem;
-    max-width: 420px;
     margin: auto;
   }
 }
-@media only screen and (min-width: 421px) and (max-width: 1900px) {
-  .main__container__galeria .main__div__galeria .main__p__galeria {
-    width: 100%;
-    max-width: 1500px;
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .main__container__galeria .main__div__galeria div .main__p__galeria {
+    width: 80%;
+    font-size: 1rem;
     margin: auto;
   }
 }
@@ -368,7 +390,7 @@ body {
   font-family: "Dancing Script", cursive;
   font-size: 2.3rem;
   text-decoration: underline;
-  margin: 9.37rem;
+  margin: 40px 0;
 }
 @media only screen and (max-width: 420px) {
   .main__container__galeria .main__titulo__galeria {
@@ -392,14 +414,19 @@ body {
   .main__container__galeria .main__container__placares {
     display: flex;
     flex-direction: column;
-    transform: none;
-    transition: none;
   }
+}
+.main__container__galeria .main__container__placares .grid__items__galeria {
+  transition: all 0.5s;
+  opacity: 0.8;
+}
+.main__container__galeria .main__container__placares .grid__items__galeria:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 @media only screen and (max-width: 420px) {
   .main__container__galeria .main__container__placares .grid__items__galeria:hover {
     transform: none;
-    opacity: 1;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 1400px) {
@@ -447,6 +474,14 @@ body {
     display: flex;
     flex-direction: column;
   }
+}
+.main__container__galeria .main__container__pisos .grid__items__galeria {
+  transition: all 0.5s;
+  opacity: 0.8;
+}
+.main__container__galeria .main__container__pisos .grid__items__galeria:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 @media only screen and (max-width: 420px) {
   .main__container__galeria .main__container__pisos .grid__items__galeria:hover {
@@ -507,6 +542,14 @@ body {
     flex-direction: column;
   }
 }
+.main__container__galeria .main__container__cocina .grid__items__galeria {
+  transition: all 0.5s;
+  opacity: 0.8;
+}
+.main__container__galeria .main__container__cocina .grid__items__galeria:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
 @media only screen and (max-width: 420px) {
   .main__container__galeria .main__container__cocina .grid__items__galeria:hover {
     transform: none;
@@ -562,6 +605,14 @@ body {
     display: flex;
     flex-direction: column;
   }
+}
+.main__container__galeria .main__container__parrilla .grid__items__galeria {
+  transition: all 0.5s;
+  opacity: 0.8;
+}
+.main__container__galeria .main__container__parrilla .grid__items__galeria:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 @media only screen and (max-width: 420px) {
   .main__container__galeria .main__container__parrilla .grid__items__galeria:hover {
@@ -768,32 +819,5 @@ body {
   background-color: black;
   color: white;
 }
-
-/* Extends grid galeria */
-.main__container__galeria .main__container__placares, .main__container__galeria .main__container__pisos, .main__container__galeria .main__container__cocina, .main__container__galeria .main__container__parrilla {
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
-}
-
-.main__container__galeria .main__container__placares .grid__items__galeria .main__grid__img, .main__container__galeria .main__container__pisos .grid__items__galeria .main__grid__img, .main__container__galeria .main__container__cocina .grid__items__galeria .main__grid__img, .main__container__galeria .main__container__parrilla .grid__items__galeria .main__grid__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.25rem;
-  box-shadow: 5px 5px 10px;
-}
-
-.main__container__galeria .main__container__placares .grid__items__galeria:hover, .main__container__galeria .main__container__pisos .grid__items__galeria:hover, .main__container__galeria .main__container__cocina .grid__items__galeria:hover, .main__container__galeria .main__container__parrilla .grid__items__galeria:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-.main__container__galeria .main__container__placares .grid__items__galeria, .main__container__galeria .main__container__pisos .grid__items__galeria, .main__container__galeria .main__container__cocina .grid__items__galeria, .main__container__galeria .main__container__parrilla .grid__items__galeria {
-  transition: all 0.5s;
-  opacity: 0.7;
-}
-
-/* Fin extens galeria */
 
 /*# sourceMappingURL=style.css.map */

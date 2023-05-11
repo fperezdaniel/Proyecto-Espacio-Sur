@@ -1,3 +1,7 @@
+/* base */
+@import "./base/extends";
+@import "./base/mixins";
+/* componets - parcials */
 @import "./components/body";
 @import "./components/header";
 @import "./components/main-index";
@@ -7,5 +11,4 @@
 @import "./components/main-galeria";
 @import "./components/main-franquicia";
 @import "./components/main-contacto";
-@import "./base/extends";
-@import "./base/mixins";
+
