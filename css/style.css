@@ -40,54 +40,65 @@ body {
   top: 0;
   z-index: 100;
 }
-.header__container__nav .navbar .container-fuid .header__h1 {
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-.header__container__nav .navbar .container-fuid .header__h1:hover {
-  text-decoration: underline;
-}
-.header__container__nav .navbar .container-fuid .header__h1 .collapse .header__ul__item .header__ul__item {
-  font-family: Arial, Helvetica, sans-serif;
+.header__container__nav .navbar .container-fluid .header__h1 {
   font-size: 1rem;
+  font-family: "Antic Didone", serif;
   font-weight: bold;
+}
+@media screen and (max-width: 420px) {
+  .header__container__nav .navbar .container-fluid .header__h1 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .header__container__nav .navbar .container-fluid .header__h1 {
+    font-size: 1rem;
+  }
+}
+.header__container__nav .navbar .container-fluid .collapse .header__ul__item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.69rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 420px) {
+  .header__container__nav .navbar .container-fluid .collapse .header__ul__item {
+    font-size: 0.62rem;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .header__container__nav .navbar .container-fluid .collapse .header__ul__item {
+    font-size: 0.62rem;
+  }
 }
 
-/* main-index */
-/* Variables */
-.main__h2__carousel {
+/* main-index */ /* Variables */
+.container .container__div__carousel .main__h2__carousel {
   font-family: "Dancing Script", cursive;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 2.5rem;
 }
-.main__h2__carousel:hover {
+.container .container__div__carousel .main__h2__carousel:hover {
   text-decoration: underline;
 }
 @media screen and (max-width: 420px) {
-  .main__h2__carousel {
-    font-size: 1.7rem;
+  .container .container__div__carousel .main__h2__carousel {
+    font-size: 1.1rem;
   }
 }
-
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .container .container__div__carousel .main__h2__carousel {
+    font-size: 1.1rem;
+  }
+}
 @media screen and (max-width: 420px) {
-  .main__carousel {
+  .container .main__carousel {
     display: none;
   }
 }
-
-/* Media queri main__h2__carousel */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
-  .main__h2__carousel {
-    font-size: 1.7rem;
-  }
-}
-
-/* madeia queri main__carousel */
-@media only screen and (min-width: 421px) and (max-width: 960px) {
-  .main__carousel {
+  .container .main__carousel {
     display: none;
   }
 }
@@ -119,38 +130,56 @@ body {
   margin-left: 0.625rem;
 }
 .footer__container .footer__div__datos .footer__div__items {
-  line-height: 2rem;
+  line-height: 1.2rem;
 }
 .footer__container .footer__div__datos .footer__div__items .footer__p--ubicacion {
   color: #777f86;
   font-family: var(--bs-body-font-family);
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-bottom: 3.12rem;
 }
 @media screen and (max-width: 420px) {
   .footer__container .footer__div__datos .footer__div__items .footer__p--ubicacion {
-    font-size: 1.2rem;
+    font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .footer__container .footer__div__datos .footer__div__items .footer__p--ubicacion {
-    font-size: 1.2rem;
+    font-size: 0.8125rem;
   }
 }
 .footer__container .footer__div__datos .footer__div__items .footer__p {
   color: #777f86;
-  font-size: 1.5rem;
+  font-size: 0.8125rem;
   font-family: var(--bs-body-font-family);
 }
 @media screen and (max-width: 420px) {
   .footer__container .footer__div__datos .footer__div__items .footer__p {
-    font-size: 1.1rem;
+    font-size: 0.75rem;
+    line-height: 3.12rem;
+    width: 15.62rem;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .footer__container .footer__div__datos .footer__div__items .footer__p {
-    font-size: 1.1rem;
+    font-size: 0.75rem;
+    line-height: 3.12rem;
+    width: 15.62rem;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer__container .footer__div__datos .footer__redes {
+    width: 16.56rem;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .footer__container .footer__div__datos .footer__redes {
+    width: 16.56rem;
+    margin: auto;
   }
 }
 .footer__container .footer__div__datos .footer__redes .footer__items__redes {
@@ -159,18 +188,20 @@ body {
 }
 .footer__container .footer__div__datos .footer__redes .footer__icon__facebook {
   color: #4267B2;
-  font-size: 25px;
+  font-size: 1rem;
 }
 .footer__container .footer__div__datos .footer__redes .footer__icon__instagram {
   color: #E1306C;
-  font-size: 25px;
+  font-size: 1rem;
 }
 .footer__container .footer__div__datos .footer__redes .footer__link__redes {
   color: #777f86;
+  font-size: 0.75rem;
 }
 @media screen and (max-width: 420px) {
   .footer__container .footer__div__datos .footer__redes .footer__link__redes {
     color: #777f86;
+    font-size: 0.62rem;
   }
 }
 .footer__container .footer__div__datos .footer__div__derechos {
@@ -179,13 +210,24 @@ body {
   display: flex;
   align-items: flex-end;
 }
+@media screen and (max-width: 420px) {
+  .footer__container .footer__div__datos .footer__div__derechos {
+    height: 10rem;
+  }
+}
 .footer__container .footer__div__datos .footer__div__derechos .footer__item__derechos {
   color: white;
+  font-size: 0.69rem;
+}
+@media screen and (max-width: 420px) {
+  .footer__container .footer__div__datos .footer__div__derechos .footer__item__derechos {
+    font-size: 0.62rem;
+  }
 }
 .footer__container .footer__container__map {
   width: 60vw;
   border-radius: 1rem;
-  margin: 1.25rem 6.25rem;
+  margin: 1.25rem 4rem;
 }
 @media screen and (max-width: 420px) {
   .footer__container .footer__container__map {
@@ -290,35 +332,35 @@ body {
   text-align: center;
   font-family: "Dancing Script", cursive;
   text-decoration: underline;
-  font-size: 2rem;
+  font-size: 22px;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 420px) {
   .main__container--quienes-somos .main__items__quienes-somos .main__h2__quienes-somos {
-    font-size: 1.6rem;
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .main__container--quienes-somos .main__items__quienes-somos .main__h2__quienes-somos {
-    font-size: 1.8rem;
+    font-size: 15px;
   }
 }
 .main__container--quienes-somos .main__items__quienes-somos .main__texto__quienes-somos {
   color: #777f86;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 14px;
   font-weight: bold;
   line-height: 50px;
   margin-left: 20px;
 }
 @media screen and (max-width: 420px) {
   .main__container--quienes-somos .main__items__quienes-somos .main__texto__quienes-somos {
-    font-size: 1rem;
+    font-size: 10px;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .main__container--quienes-somos .main__items__quienes-somos .main__texto__quienes-somos {
-    font-size: 1.1rem;
+    font-size: 10px;
   }
 }
 
@@ -345,13 +387,18 @@ body {
 .main__container__galeria .main__div__galeria .main__h2__galeria {
   color: #212529;
   font-family: "Dancing Script", cursive;
-  font-size: 2.3rem;
+  font-size: 22px;
   text-decoration: underline;
   margin: 7rem 6.25rem;
 }
 @media screen and (max-width: 420px) {
   .main__container__galeria .main__div__galeria .main__h2__galeria {
-    font-size: 1.7rem;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .main__container__galeria .main__div__galeria .main__h2__galeria {
+    font-size: 15px;
   }
 }
 .main__container__galeria .main__div__galeria div {
@@ -364,23 +411,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0.625rem;
   box-shadow: 0.31rem 0.31rem 0.31rem;
-  letter-spacing: 0.625rem;
-  line-height: 2.5rem;
-  font-size: 1.2rem;
+  letter-spacing: 10px;
+  line-height: 1.5rem;
+  font-size: 14px;
   font-weight: bold;
   padding: 10px;
 }
 @media screen and (max-width: 420px) {
   .main__container__galeria .main__div__galeria div .main__p__galeria {
     width: 90%;
-    font-size: 1rem;
+    font-size: 11px;
+    letter-spacing: 10px;
     margin: auto;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .main__container__galeria .main__div__galeria div .main__p__galeria {
     width: 80%;
-    font-size: 1rem;
+    font-size: 11px;
+    letter-spacing: 10px;
     margin: auto;
   }
 }
@@ -388,13 +437,18 @@ body {
   color: #212529;
   text-align: center;
   font-family: "Dancing Script", cursive;
-  font-size: 2.3rem;
+  font-size: 22px;
   text-decoration: underline;
   margin: 40px 0;
 }
 @media screen and (max-width: 420px) {
   .main__container__galeria .main__titulo__galeria {
-    font-size: 1.7rem;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .main__container__galeria .main__titulo__galeria {
+    font-size: 15px;
   }
 }
 .main__container__galeria .main__container__placares {
@@ -402,7 +456,7 @@ body {
   display: grid;
   grid-template-rows: repeat(2, 400px);
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  gap: 10px;
 }
 @media screen and (max-width: 420px) {
   .main__container__galeria .main__container__placares {
@@ -653,19 +707,19 @@ body {
 }
 .main__container__franquicia .main__div__franquicia--one .main__texto__franquicia {
   color: #212529;
-  font-size: 2rem;
+  font-size: 22px;
   font-family: "Dancing Script", cursive;
   text-decoration: underline;
   margin: 9.37rem 0;
 }
 @media screen and (max-width: 420px) {
   .main__container__franquicia .main__div__franquicia--one .main__texto__franquicia {
-    font-size: 1.7rem;
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .main__container__franquicia .main__div__franquicia--one .main__texto__franquicia {
-    font-size: 1.7rem;
+    font-size: 15px;
   }
 }
 .main__container__franquicia .main__div__franquicia--one .main__texto--franquicia {
@@ -673,22 +727,24 @@ body {
   color: #777f86;
   border-radius: 0.625rem;
   box-shadow: 0.31rem 0.31rem 0.31rem;
-  letter-spacing: 0.625rem;
+  letter-spacing: 10px;
   font-weight: bold;
   line-height: 2.5rem;
-  font-size: 1.2rem;
+  font-size: 14px;
   margin-bottom: 80px;
 }
 @media screen and (max-width: 420px) {
   .main__container__franquicia .main__div__franquicia--one .main__texto--franquicia {
-    font-size: 1rem;
+    letter-spacing: 10px;
+    font-size: 10px;
     margin: 0 20px;
     letter-spacing: normal;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .main__container__franquicia .main__div__franquicia--one .main__texto--franquicia {
-    font-size: 1rem;
+    letter-spacing: 10px;
+    font-size: 10px;
     margin: 0 20px;
     letter-spacing: normal;
   }
@@ -701,32 +757,32 @@ body {
 .main__container__franquicia .main__div__franquicias .foto__occhipinti {
   border: 2px solid black;
   border-radius: 500px;
-  height: 150px;
+  height: 100px;
 }
 @media screen and (max-width: 420px) {
   .main__container__franquicia .main__div__franquicias .foto__occhipinti {
-    height: 120px;
+    height: 80px;
     margin-top: 50px;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .main__container__franquicia .main__div__franquicias .foto__occhipinti {
-    height: 120px;
+    height: 90px;
     margin-top: 50px;
   }
 }
 .main__container__franquicia .main__div__franquicias .foto__asador {
-  height: 152px;
+  height: 100px;
 }
 @media screen and (max-width: 420px) {
   .main__container__franquicia .main__div__franquicias .foto__asador {
     margin-top: 50px;
-    height: 122px;
+    height: 80px;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .main__container__franquicia .main__div__franquicias .foto__asador {
-    height: 122px;
+    height: 90px;
     margin-top: 50px;
   }
 }
@@ -744,27 +800,27 @@ body {
   text-align: center;
   font-family: "Dancing Script", cursive;
   text-decoration: underline;
-  font-size: 2rem;
+  font-size: 1.56rem;
 }
 @media screen and (max-width: 420px) {
   .main__container__contacto .main__item__div .h2__contacto {
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .main__container__contacto .main__item__div .h2__contacto {
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
 }
 .main__container__contacto .main__item__div .main__div__contacto {
-  border-radius: 10px;
+  border-radius: 0.62rem;
   padding: 100px 400px;
   display: flex;
   justify-content: center;
 }
 @media screen and (max-width: 420px) {
   .main__container__contacto .main__item__div .main__div__contacto {
-    border-radius: 10px;
+    border-radius: 0.62rem;
     padding: 50px 30px;
   }
 }
@@ -774,24 +830,24 @@ body {
   }
 }
 .main__container__contacto .main__item__div .main__div__contacto .controls {
-  width: 900px;
-  height: 60px;
+  width: 600px;
+  height: 3.12rem;
   border: 1px solid black;
   border-radius: 10px;
   margin: 5px;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
 }
 @media screen and (max-width: 420px) {
   .main__container__contacto .main__item__div .main__div__contacto .controls {
-    font-size: 1rem;
+    font-size: 16px;
     width: 100%;
     height: 15%;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .main__container__contacto .main__item__div .main__div__contacto .controls {
-    font-size: 1rem;
+    font-size: 16px;
     width: 100%;
     height: 15%;
   }

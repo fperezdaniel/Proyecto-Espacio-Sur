@@ -1,59 +1,59 @@
-
 /* main-index */
 @import "../base/variable";
-.main__h2__carousel{
-    font-family: $fonts-subtitle;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 2.5rem;
-    &:hover{
-        text-decoration: underline;
-    }
+
+
+.container {
+    .container__div__carousel {
+        .main__h2__carousel {
+            font-family: $fonts-subtitle;
+            font-size: 1.4rem;
+            text-align: center;
+            margin-top: 4rem;
+            margin-bottom: 2.5rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            @include mobile {
+                font-size: 1.1rem;
+            }
+
+            @include tablet {
+                font-size: 1.1rem;
+            }
+        }
     
-    @include mobile{
-        font-size: 1.7rem;
     }
-}
-.main__carousel{
-    @include mobile{
-        display: none;
+    .main__carousel{
+        @include mobile {
+            display: none;
+        }
+    
+        @include tablet {
+            display: none;
+        }
     }
 }
 
-/* Media queri main__h2__carousel */
-.main__h2__carousel{
-    @include tablet{
-        font-size: 1.7rem;
-    }
-}
-/* madeia queri main__carousel */
-.main__carousel{
-    @include tablet{
-        display: none;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* Fin main-index */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

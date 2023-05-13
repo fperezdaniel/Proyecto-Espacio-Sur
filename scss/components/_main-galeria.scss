@@ -25,12 +25,15 @@
         .main__h2__galeria {
             color: #212529;
             font-family: $fonts-subtitle;
-            font-size: 2.3rem;
+            font-size: 22px;
             text-decoration: underline;
             margin: 7rem 6.25rem;
 
             @include mobile{
-                font-size: 1.7rem;
+                font-size: 15px;
+            }
+            @include tablet{
+                font-size: 15px;
             }
         }
         div{
@@ -43,21 +46,23 @@
                 font-family: $fonts-text;
                 border-radius: 0.625rem;
                 box-shadow: 0.31rem 0.31rem 0.31rem;
-                letter-spacing: 0.625rem;
-                line-height: 2.5rem;
-                font-size: 1.2rem;
+                letter-spacing: 10px;
+                line-height: 1.5rem;
+                font-size: 14px;
                 font-weight: bold;
                 padding: 10px;
     
                 @include mobile {
                     width: 90%;
-                    font-size: 1rem;
+                    font-size: 11px;
+                    letter-spacing: 10px;
                     margin: auto;
                 }
     
                 @include tablet{
                     width: 80%;
-                    font-size: 1rem;
+                    font-size: 11px;
+                    letter-spacing: 10px;
                     margin: auto;
                 }
             }
@@ -69,19 +74,22 @@
         color: nth($colores, 2);
         text-align: center;
         font-family: $fonts-subtitle;
-        font-size: 2.3rem;
+        font-size: 22px;
         text-decoration: underline;
         margin: 40px 0;
 
         @include mobile {
-            font-size: 1.7rem;
+            font-size: 15px;
+        }
+        @include tablet{
+            font-size: 15px;
         }
     }
 
     .main__container__placares {
         /* Galeria grid placard */
         @extend %ancho-margin;
-        @include grilla (grid, repeat(2, 400px), repeat(4, 1fr), 5px);
+        @include grilla (grid, repeat(2, 400px), repeat(4, 1fr), 10px);
 
         
 
