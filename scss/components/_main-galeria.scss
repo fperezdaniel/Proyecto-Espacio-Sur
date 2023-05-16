@@ -55,14 +55,14 @@
                 @include mobile {
                     width: 90%;
                     font-size: 11px;
-                    letter-spacing: 10px;
+                    letter-spacing: normal;
                     margin: auto;
                 }
     
                 @include tablet{
                     width: 80%;
                     font-size: 11px;
-                    letter-spacing: 10px;
+                    letter-spacing: normal;
                     margin: auto;
                 }
             }

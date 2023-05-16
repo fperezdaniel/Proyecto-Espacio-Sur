@@ -421,7 +421,7 @@ body {
   .main__container__galeria .main__div__galeria div .main__p__galeria {
     width: 90%;
     font-size: 11px;
-    letter-spacing: 10px;
+    letter-spacing: normal;
     margin: auto;
   }
 }
@@ -429,7 +429,7 @@ body {
   .main__container__galeria .main__div__galeria div .main__p__galeria {
     width: 80%;
     font-size: 11px;
-    letter-spacing: 10px;
+    letter-spacing: normal;
     margin: auto;
   }
 }
@@ -746,7 +746,7 @@ body {
     letter-spacing: 10px;
     font-size: 10px;
     margin: 0 20px;
-    letter-spacing: normal;
+    letter-spacing: 5px;
   }
 }
 .main__container__franquicia .main__div__franquicias {
