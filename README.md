@@ -1,5 +1,5 @@
 # Proyecto-Espacio-Sur
-<h1 align="center">Hi 👋, I'm Fernando ddaniel Perez</h1>
+<h1 align="center">Hi 👋, I'm Fernando daniel Perez</h1>
 <h3 align="center">Primer Proyecto de desarrollo web - Espacio Sur.</h3>
 
 <h3 align="left">Connect with me:</h3>
